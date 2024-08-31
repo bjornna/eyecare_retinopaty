@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "708db0436941760b0a1fd12964d59054",
+      "MD5-CAM-1.0.1" : "a213e8a91fa54af487127c1b54a4d0b8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -1576,6 +1576,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0028.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -1613,17 +1614,19 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "0..1",
+                              "occurrences" : "1..1",
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
-                                "existence" : "0..1",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
                                   "terminologyId" : {
                                     "value" : "SNOMED-CT"
                                   },
                                   "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "46635009",
@@ -1750,7 +1753,7 @@
             "code" : "at0028",
             "text" : "Problemer eller diagnoser?",
             "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
-            "comment" : "BNA: Er denne i bruk? Kardinalitet er 0..1 stemmer det? "
+            "comment" : "Denne er ikke i bruk i FORM 31.08.2024 - fjerner den. "
           }
         },
         "de" : {
