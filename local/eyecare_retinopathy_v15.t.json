@@ -9,9 +9,9 @@
       "organisation" : "DIPS AS",
       "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Martine Louise Nalum <mana@dips.no>, Morten Hørthe <mho@dips.no>" ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "380360860b00b541ceec0ca215222720",
+      "MD5-CAM-1.0.1" : "708db0436941760b0a1fd12964d59054",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -36,6 +36,7 @@
           "codeString" : "nb"
         },
         "purpose" : "Klassifisering av diabetes retinopati og makulaødem",
+        "keywords" : [ "eyecare,retinopati" ],
         "use" : "Klassifisering av diabetes retinopati og makulaødem",
         "originalResourceUri" : { },
         "otherDetails" : { }
@@ -221,7 +222,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "ed2cc0eb-c508-3e66-a7bc-0e3f3e3f196f",
+  "buildUid" : "ac71c2fd-ea50-38b8-98b8-c3f2fe5d0ca4",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -238,7 +239,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DA38D7FDB467BD8746408BF41D8C608D"
+        "PARENT:MD5-CAM-1.0.1" : "4530780ee85c5d2249d2e670a1a86b49"
       },
       "details" : {
         "nb" : {
@@ -298,17 +299,19 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "no.dips.eyecare"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "no.dips.eyecare" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.dips.eyecare",
                     "code" : "UX_RET",
@@ -936,17 +939,19 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "170945005",
@@ -1739,6 +1744,13 @@
             "text" : "Diagnosetidspunkt",
             "description" : "Tidsangivelsen for bekymringen, plagen, problemet eller diagnosen.",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for bekymringen, plagen, problemet eller diagnosen i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Bekymringen, plagen, problemet eller diagnosen faktiske dato og/eller klokkeslett, start- og slutttid for bekymringen, plagen, problemet eller diagnosen, et tidsintervall for når bekymringen, plagen, problemet eller diagnosen oppstod, varigheten av bekymringen, plagen, problemet eller diagnosen, individets alder på tidspunktet for bekymringen, plagen, problemet eller diagnosen, eller hvor lenge det siden det oppstod. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Problemer eller diagnoser?",
+            "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
+            "comment" : "BNA: Er denne i bruk? Kardinalitet er 0..1 stemmer det? "
           }
         },
         "de" : {
