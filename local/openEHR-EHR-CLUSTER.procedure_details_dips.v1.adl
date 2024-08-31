@@ -1,0 +1,147 @@
+archetype (adl_version=1.4; uid=27d6b5dd-a533-373e-b654-f54030ce5047)
+	openEHR-EHR-CLUSTER.procedure_details_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"Bjørn Næss">
+				["organisation"] = <"DIPS AS">
+				["email"] = <"bna@dips.no">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2015-02-02">
+		["name"] = <"Anca Heyd">
+		["organisation"] = <"DIPS ASA">
+		["email"] = <"ahe@dips.no">
+	>
+	lifecycle_state = <"Initial">
+	details = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			purpose = <"Å registrere tilleggsprosedyrer som bestilles sammen med en hovedprosedyre.">
+			keywords = <"bestilling","henvisning","foresprøsel","helsetjeneste">
+			use = <"Brukes som tillegg til en prosedyre som er definert som hovedprosedyre. ">
+			misuse = <"Skal ikke brukes for å å registrere informasjon om en bestilt hovedprosedyre.">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Å registrere detaljer til en prosedyre.">
+			keywords = <"bestilling","henvisning","helsetjeneste","forespørsel">
+			use = <"Skal brukes for å registrere informasjon om en bestilt prosedyre.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To enter details about a procedure. ">
+			keywords = <"procedure","request">
+			copyright = <"DIPS AS">
+			use = <"Use this archetype to enter detailed infomation more specific terminologi/codes to the procedure defined. 
+
+Is designed to be used as part for an ACTION.procedure">
+			misuse = <"Not to be used to define the primary procedure. ">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"DA7B7941885375E9131A4BA5DF7211F4">
+		["build_uid"] = <"8706eb72-6885-3283-84d0-f50e24e433a9">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Prosedyredetaljer
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Prosedyrenavn
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Prosedyretype
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..*} matches {    -- Beskrivelse prosedyre
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["no"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tilleggsprosedyre">
+					description = <"Tilleggsprosedyrer som bestilles.">
+				>
+				["at0001"] = <
+					text = <"Prosedyrenavn">
+					description = <"Identifisering av bestilt prosedyre. Kodes ofte med en ekstern terminologi.">
+				>
+				["at0002"] = <
+					text = <"Prosedyretype">
+					description = <"Detaljer vedrørende prosedyretype som er bestilt f.eks. kirurgisk, radiologisk etc.">
+				>
+				["at0004"] = <
+					text = <"Beskrivelse prosedyre">
+					description = <"En detaljert narrativ beskrivelse av bestilt prosedyre.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Prosedyredetaljer">
+					description = <"Detaljer til prosedyre.">
+				>
+				["at0001"] = <
+					text = <"Prosedyrenavn">
+					description = <"Identifisering av bestilt prosedyre. Kodes ofte med en ekstern terminologi.">
+				>
+				["at0002"] = <
+					text = <"Prosedyretype">
+					description = <"Detaljer vedrørende prosedyretype som er bestilt f.eks. kirurgisk, radiologisk etc.">
+				>
+				["at0004"] = <
+					text = <"Beskrivelse prosedyre">
+					description = <"En detaljert narrativ beskrivelse av bestilt prosedyre.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Procedure details">
+					description = <"Details about an procedure. ">
+				>
+				["at0001"] = <
+					text = <"Procedure name">
+					description = <"Coding of the name of the procedure with a terminology is preferred, where possible">
+				>
+				["at0002"] = <
+					text = <"Procedure type">
+					description = <"Details regarding the type of procedure ordered for example. surgical, radiological etc.">
+				>
+				["at0004"] = <
+					text = <"Description">
+					description = <"A more narrative description of the ordered procedure.">
+				>
+			>
+		>
+	>
