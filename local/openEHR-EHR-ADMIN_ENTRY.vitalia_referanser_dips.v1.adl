@@ -18,6 +18,9 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"Arketypen ble utviklet for å støtte gjenbruk av data til sekundærbruk. For eksempel beregning av en score eller uttrekk til kvalitetsregister. ">
+			use = <"Brukes kun som referanse for sekundære registreringer. ">
+			misuse = <"Skal ikke brukes for å dokumentere primærregistrering, dvs. første gangs registrering av en verdi. Primærregistrering legges i sine definerte publiserte arketyper. ">
 		>
 	>
 	other_details = <
@@ -26,12 +29,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"902f4288e1990b51099ae34e4e98108e">
+		["MD5-CAM-1.0.1"] = <"744515ab57c590b93a54cefd3d494305">
 		["build_uid"] = <"73035fb8-7d31-366d-9308-754b93fdb36c">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] matches {    -- vitalia referanser DIPS
+	ADMIN_ENTRY[at0000] matches {    -- Vitalia referanser
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -49,8 +52,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"vitalia referanser DIPS">
-					description = <"vitalia referanser DIPS">
+					text = <"Vitalia referanser">
+					description = <"Brukes for å samle referanse data fra ulike kjerneregistreringer som f.eks. puls og blodtrykk. ">
 				>
 				["at0001"] = <
 					text = <"Item tree">
