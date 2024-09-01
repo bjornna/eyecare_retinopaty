@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7c8d06d89b739580a3e2a680b1ee2843",
+      "MD5-CAM-1.0.1" : "3135ad7d2ec5ee915978ab4e419f2a0e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -11052,6 +11052,35 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0032",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0070.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -11073,12 +11102,25 @@
             "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
             "comment" : "Benytter kodesøk for ICD10 i applikasjonen for å definere diagnosene."
           },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Sist oppdatert",
+            "description" : "Datoen da problemet eller diagnosen sist ble oppdatert i EPJ. ",
+            "comment" : "BNA 1.sept 24 - feltet virker ikke å være i bruk i applikasjonen. Skal det fjernes eller tas mer aktivt i bruk?"
+          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Problem/diagnosenavn",
             "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
             "comment" : "B"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Sist oppdatert",
+            "description" : "Datoen da problemet eller diagnosen sist ble oppdatert"
           }
         },
         "sv" : { },
@@ -12137,6 +12179,19 @@
             "text" : "Tentativ dato",
             "description" : "Dato/tid, eller akseptabelt intervall av dato/tid, da tjenesten skal utføres.",
             "comment" : "Dette dataelementet tillater registrering av timing for én tjeneste, enten som dato/tid, intervall av dato/tid, eller som en tekstbeskrivelsen som kan understøtte \"neste tilgjengelige\". I praksis vil klinikere ofte tenke i omtrentlig timing, for eksempel \"revurdering om 3 måneder, 6 måneder eller 12 måneder. Siden kliniske systemer trenger mer eksakte tidsangivelser, vil \"3 måneder\" som regel konverteres til en eksakt dato 3 måneder fra registreringsdatoen, og lagres i dette dataelementet. Dersom det er behov for kompleks timing eller sekvenser av timing, bruk arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\". I disse tilfellene blir dette dataelementet redundant."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Helsetjenesteforespørsel",
+            "description" : "Benyttes for å angi videre oppfølging av diabetes retinopati. "
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Forespørsel",
+            "description" : "Definisjon av den konkrete planlagte aktiviteten. ",
+            "comment" : "I denne applikasjonen brukes kun en aktivitet per instruksjon. "
           }
         }
       },
@@ -12563,7 +12618,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "bd2ade8e954c2dd4b8a6da84133adcf2"
+        "PARENT:MD5-CAM-1.0.1" : "5974b7ba9822e7e567d9114fd4fbba56"
       },
       "details" : {
         "nb" : {
@@ -13024,17 +13079,19 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
-                        "existence" : "0..1",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
                           "terminologyId" : {
                             "value" : "SNOMED-CT"
                           },
                           "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED-CT" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "36228007",
@@ -13051,6 +13108,12 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0148.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0135.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
@@ -13304,14 +13367,35 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Øyelegeundersøkelse andre årsaker",
-            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
+            "description" : "Benyttes her for å registrere andre oppfølginger enn neste kontroll/screening for diabetes retinopati. F.eks. oppfølging av lege. "
           },
           "at0040.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0040.1",
             "text" : "Tentativ dato",
-            "description" : "Dato/tid, eller akseptabelt intervall av dato/tid, da tjenesten skal utføres.",
-            "comment" : "Dette dataelementet tillater registrering av timing for én tjeneste, enten som dato/tid, intervall av dato/tid, eller som en tekstbeskrivelsen som kan understøtte \"neste tilgjengelige\". I praksis vil klinikere ofte tenke i omtrentlig timing, for eksempel \"revurdering om 3 måneder, 6 måneder eller 12 måneder. Siden kliniske systemer trenger mer eksakte tidsangivelser, vil \"3 måneder\" som regel konverteres til en eksakt dato 3 måneder fra registreringsdatoen, og lagres i dette dataelementet. Dersom det er behov for kompleks timing eller sekvenser av timing, bruk arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\". I disse tilfellene blir dette dataelementet redundant."
+            "description" : "Angi ønsket dato for utført oppfølging. ",
+            "comment" : "Bruker angir ønsket eller tentativ dato for oppfølging. Feltet er  normativt veiledende for de som skal følge opp bestilling og sette opp kontakter. "
+          },
+          "at0135" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135",
+            "text" : "Beskrivelse",
+            "description" : "Beskrivelse av hva som ønskes undersøkt eller utført i den ønskede oppfølgingen. ",
+            "comment" : "Fritekst beskrivelse. "
+          },
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "Tjenesten er undersøkelse av øye. Dette feltet er skjult for bruker. ",
+            "comment" : "Kodet med SNOMED-CT."
+          },
+          "at0135.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0135.1",
+            "text" : "Beskrivelse",
+            "description" : "B",
+            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
           }
         }
       },
