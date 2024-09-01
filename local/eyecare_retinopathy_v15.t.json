@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2c1df0ae1c5cfc27a6754cc52f8064ae",
+      "MD5-CAM-1.0.1" : "8a78384dd62f8f9c641d11239b1b427f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -12379,11 +12379,17 @@
             "text" : "OCT",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt.\r\nBenyttes ofte for å definere en prosedyre som inngår i en større og/eller omsluttende proseydre. "
           },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Kroppsted",
+            "description" : "Kroppsted er øye. Kodet med SNOMED-CT og feltet er skjult for bruker. "
+          },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "Prosedyrenavn",
-            "description" : "Prosedyren er OCT og er skjult for bruker. "
+            "description" : "Angir om det skal utføres OCT ved neste kontroll. "
           }
         },
         "en" : {
@@ -12490,17 +12496,19 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "426880003",
@@ -12537,17 +12545,19 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "81745001",
@@ -12573,6 +12583,18 @@
             "code" : "at0000.1",
             "text" : "Foto",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt.\r\nBenyttes ofte for å definere en prosedyre som inngår i en større og/eller omsluttende proseydre. "
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Kroppsted",
+            "description" : "Kroppsted er øye. Kodet med SNOMED-CT og feltet er skjult for bruker. "
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Prosedyrenavn",
+            "description" : "Angir om det skal utføres Foto ved neste kontroll. "
           }
         },
         "en" : {
