@@ -21,7 +21,7 @@ description
 		["organisation"] = <"DIPS AS">
 		["email"] = <"bna@dips.no">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"release_candidate">
 	other_contributors = <"Martine Louise Nalum <mana@dips.no>, Morten Hørthe <mho@dips.no>", ...>
 	details = <
 		["nb"] = <
@@ -44,7 +44,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"163861208d202bdaa32d8e2d3429f8e1">
+		["MD5-CAM-1.0.1"] = <"de82c68bae7a7a5b8d831d856eb0396f">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
