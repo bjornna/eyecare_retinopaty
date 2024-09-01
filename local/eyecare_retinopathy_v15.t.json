@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "8a78384dd62f8f9c641d11239b1b427f",
+      "MD5-CAM-1.0.1" : "313da0bb8136109909c6869a5ef07984",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -1551,17 +1551,19 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "0..1",
+                          "occurrences" : "1..1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
-                            "existence" : "0..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
                               "terminologyId" : {
                                 "value" : "no.dips.arena.eyecare"
                               },
                               "constraint" : [ ],
+                              "selectedTerminologies" : [ "no.dips.arena.eyecare" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "no.dips.arena.eyecare",
                                 "code" : "EYEDIA",
@@ -1754,6 +1756,13 @@
             "text" : "Problemer eller diagnoser?",
             "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
             "comment" : "Denne er ikke i bruk i FORM 31.08.2024 - fjerner den. "
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "Kontekst er kartlegging av diabetestype ved oppfølging/kontroll på utviklingen av diabetes retinopati. ",
+            "comment" : "Det gjøres kartlegging av diabetestype som underlag for oppfølging av diabetes retinopati. Feltet er skjult for bruker. "
           }
         },
         "de" : {
