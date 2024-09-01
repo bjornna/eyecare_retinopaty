@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -22,6 +29,11 @@ description
 			use = <"Brukes kun som referanse for sekundære registreringer. ">
 			misuse = <"Skal ikke brukes for å dokumentere primærregistrering, dvs. første gangs registrering av en verdi. Primærregistrering legges i sine definerte publiserte arketyper. ">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+			use = <"Use as a container for specific reference measurements. ">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -29,7 +41,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"744515ab57c590b93a54cefd3d494305">
+		["MD5-CAM-1.0.1"] = <"28c6802d647e0bb5550189c82753093f">
 		["build_uid"] = <"73035fb8-7d31-366d-9308-754b93fdb36c">
 	>
 
@@ -54,6 +66,22 @@ ontology
 				["at0000"] = <
 					text = <"Vitalia referanser">
 					description = <"Brukes for å samle referanse data fra ulike kjerneregistreringer som f.eks. puls og blodtrykk. ">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"CLUSTER_SLOT">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Vitalia references">
+					description = <"Used to collect reference data from various core registrations such as e.g. pulse and blood pressure.">
 				>
 				["at0001"] = <
 					text = <"Item tree">
