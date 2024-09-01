@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "3135ad7d2ec5ee915978ab4e419f2a0e",
+      "MD5-CAM-1.0.1" : "2c1df0ae1c5cfc27a6754cc52f8064ae",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -12378,6 +12378,12 @@
             "code" : "at0000.1",
             "text" : "OCT",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt.\r\nBenyttes ofte for å definere en prosedyre som inngår i en større og/eller omsluttende proseydre. "
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Prosedyrenavn",
+            "description" : "Prosedyren er OCT og er skjult for bruker. "
           }
         },
         "en" : {
