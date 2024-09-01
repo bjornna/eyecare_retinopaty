@@ -27,14 +27,18 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Benyttes for klassifisering av diabetes retinopati og makulaødem">
-			keywords = <"diabetes,retinopati,makulaødem", ...>
+			keywords = <"diabetes","retinopati","makulaødem">
+			copyright = <"© openEHR Foundation">
 			use = <"Klassifisering av diabetes retinopati og makulaødem">
 			misuse = <"Er ikke ment for generell dokumentasjon av funn ved undersøkelse av øye. ">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"Used for classification of diabetic retinopathy and macular oedema">
+			keywords = <"diabetes","retinopathy","macular","oedema">
 			copyright = <"© openEHR Foundation">
-			misuse = <"*Er ikke ment for generell dokumentasjon av funn ved undersøkelse av øye.  (nb)">
+			use = <"Classification of diabetic retinopathy and macular edema">
+			misuse = <" Is not intended for general documentation of findings during eye examinations.">
 		>
 	>
 	other_details = <
@@ -44,7 +48,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"de82c68bae7a7a5b8d831d856eb0396f">
+		["MD5-CAM-1.0.1"] = <"8a7362f0d7a02a51d5d624433aa45b60">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -307,14 +311,14 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"International Classification of DR Scale">
-					description = <"International Classification of DR Scale">
+					description = <"Classification of diabetic retinopathy and macular edema">
 				>
 				["at0001"] = <
 					text = <"History">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Any event (nb)">
+					text = <"Any event">
 					description = <"">
 				>
 				["at0003"] = <
@@ -322,126 +326,126 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*Diabetisk retinopati (nb)">
+					text = <"Diabetic retinopathy">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*Ingen synlig diabetisk retinopati (DR) (nb)">
-					description = <"*Ingen synlige forandringer (nb)">
+					text = <"0 - No visible diabetic retinopathy (DR)">
+					description = <"No visible changes">
 				>
 				["at0006"] = <
-					text = <"*Mild, non-proliferativ DR (nb)">
-					description = <"*Bare rødpunkter (mikroaneurismer og/eller punktblødninger) (nb)">
+					text = <"1 - Mild, non-proliferative DR">
+					description = <"Only red dots (microaneurysms and/or punctate hemorrhages)">
 				>
 				["at0007"] = <
-					text = <"*Moderat non-proliferativ DR (nb)">
-					description = <"*Mer enn mild NPDR, men mindre enn alvorlig NDPR (nb)">
+					text = <"2 - Moderate non-proliferative DR">
+					description = <"More than mild NPDR, but less than severe NDPR">
 				>
 				["at0008"] = <
-					text = <"*Alvorlig non-proliferativ DR (nb)">
-					description = <"*Mer enn 20 intraretinale blødninger i hver av de fire kvadrantene eller venehaustrering i minst to kvadranter eller tydelige IRMA i minst en kvandrant (4-2-1-regelen) (nb)">
+					text = <"- Severe non-proliferative DR">
+					description = <"More than 20 intraretinal hemorrhages in each of the four quadrants or venous haustration in at least two quadrants or clear IRMA in at least one quadrant (4-2-1 rule)">
 				>
 				["at0009"] = <
-					text = <"*Proliferativ DR (nb)">
-					description = <"*Indirekte tegn på neovaskulering (NV) i form av corpusblødning og/eller preretinal blødning. Og/eller: Synlige proliferasjoner på papillen (new vessels on disc; NVD) eller andre steder på netthinnen (new vessels elsewhere), aktive eller behandlet med panretinal fotokoagulasjon. Høyrisiko PDR: Papilleprofilerasjoner (NVD >= 1/3 papilleareal) eller store proliferasjoner (NVE >= 1/2 papilleareal) eller proliferasjon + corpusblødning (nb)">
+					text = <"4 - Proliferative DR">
+					description = <"Indirect signs of neovascularization (NV) in the form of corpus hemorrhage and/or preretinal hemorrhage. And/or: Visible proliferations on the papilla (new vessels on disc; NVD) or elsewhere on the retina (new vessels elsewhere), active or treated with panretinal photocoagulation. High-risk PDR: Papillary profiling (NVD >= 1/3 papillary area) or large proliferations (NVE >= 1/2 papillary area) or proliferation + corpus bleeding">
 				>
 				["at0010"] = <
-					text = <"*Diabetisk makulaødem - vurdert bilde (nb)">
-					description = <"*Vurdering gjort ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. Klassifiseringen har mindre presisjon enn ved OCT.  (nb)">
-					comment = <"* Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon. (nb)">
+					text = <"Diabetic macular edema - assessed image">
+					description = <" Assessment made using contact lenses in a slit lamp and/or with stereo fundus photography after pupil dilation. The classification has less precision than with OCT.">
+					comment = <"Hard exudates are a sign of persistent or previously experienced macular oedema. DMØ is defined as retinal thickening, and requires a three-dimensional examination to be detected. With a great degree of subjectivity, this has been assessed by using contact lenses in a slit lamp and/or with stereo fundus photography after pupil dilation. In the clinic, OCT (optical coherence tomography) has now almost completely taken over in terms of definition and detection, as the edema is visualized directly and with greater precision with this method.">
 				>
 				["at0011"] = <
-					text = <"*Nei (nb)">
-					description = <"*Ingen synlige ødemforandringer eller harde eksudater i bakre pol. (nb)">
+					text = <"0 - No">
+					description = <"No visible edema changes or hard exudates in the posterior pole.">
 				>
 				["at0012"] = <
-					text = <"*Ja - ikke klinisk signifikant (nb)">
-					description = <"*Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (> 1 PD fra sentrum) (nb)">
+					text = <"1 - Yes, not clinically significant">
+					description = <"Mild macular edema: Hard escutcheons (or thickened retina) within the carabial arches, but not central parts of the macula (> 1 PD from the center)">
 				>
 				["at0013"] = <
-					text = <"*Ja - klinisk signifikant (nb)">
-					description = <"*Harde eksudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderate makulaødem: Påvirker ikke sentrale fovea. 500um - 1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum (nb)">
+					text = <"2 - Yes, clinically significant">
+					description = <"Hard exudates (or thickened retina) in the central part of the macula, within 1 PD from the center. Moderate macular edema: Does not affect central fovea. 500um - 1 PD from the center. Severe macular edema: In the fovea, less than 500 µm from the center">
 				>
 				["at0014"] = <
-					text = <"*Øye (nb)">
-					description = <"*Angi hvilket øye (høyre/venstre) som er undersøkt.  (nb)">
+					text = <"Eye">
+					description = <" Indicate which eye (right/left) has been examined.">
 					comment = <"*Se også terminologi binding til SNOMED-CT  (nb)">
 				>
 				["at0015"] = <
-					text = <"*Høyre øye (nb)">
-					description = <"*Undersøkelsen er gjort på høyre øye (nb)">
+					text = <"Right eye">
+					description = <"The examination is done on the right eye">
 				>
 				["at0016"] = <
-					text = <"*Venstre øye (nb)">
-					description = <"*Undersøkelsen er gjort på venstre øye (nb)">
+					text = <"Left eye">
+					description = <"The examination is done on the left eye">
 				>
 				["at0017"] = <
-					text = <"*Modalitet (nb)">
+					text = <"Modality">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*Foto (nb)">
-					description = <"*Retina foto var grunnlaget for vurderingen (nb)">
+					text = <"Photo">
+					description = <"Retina photo was the basis for the assessment">
 				>
 				["at0019"] = <
-					text = <"*OCT (nb)">
-					description = <"*OCT (nb)">
+					text = <"OCT">
+					description = <"OCT">
 				>
 				["at0020"] = <
-					text = <"*Spaltelampe (nb)">
+					text = <"Slit lamp">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*Oftalmoskopi (nb)">
+					text = <"Ophthalmoscopy">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*Beskrivelse av modalitet (nb)">
+					text = <"Description of modality">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"*Graderingsmetode (nb)">
+					text = <"Grading method">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*Primærgradering (nb)">
-					description = <"*Optiker, øyesykepleier eller annet kvalifisert helsepersonell med dokumenterte kvalifikasjoner kan primærgradere netthinnefoto. (nb)">
+					text = <"Primary grading">
+					description = <"Opticians, ophthalmic nurses or other qualified health personnel with documented qualifications can primary grade retinal photographs.">
 				>
 				["at0025"] = <
-					text = <"*Sekundærgradering (nb)">
-					description = <"*Øyelege med dokumenterte kvalifikasjoner kan sekundærgradere og stille endelig diagnose. (nb)">
+					text = <"Secondary grading">
+					description = <"An ophthalmologist with documented qualifications can provide a secondary degree and make a final diagnosis.">
 				>
 				["at0026"] = <
-					text = <"*Strukturerte detaljer (nb)">
-					description = <"*Benyttes for å modellere inn andre strukturerte elementer.  Noen applikasjoner vil knytte referanse til bildet som ble benyttet i vurderingen.  (nb)">
+					text = <"Structured details">
+					description = <" Used to model other structured elements. Some applications will link a reference to the image that was used in the assessment.">
 				>
 				["at0027"] = <
 					text = <"Comment">
-					description = <"*Fritekst kommentar til graderingen  (nb)">
+					description = <" Free text comment on the grading">
 				>
 				["at0028"] = <
-					text = <"*Annet (nb)">
+					text = <"Other">
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*Diabetisk makulaødem - vurdert OCT (nb)">
-					description = <"*Klassifisering med  OCT (optisk koherenstomografi) for direkte visualisering av ødemet og med beste presisjon.  (nb)">
+					text = <"Diabetic macular edema - assessed by OCT">
+					description = <" Classification with OCT (optical coherence tomography) for direct visualization of the edema and with the best precision.">
 					comment = <"* Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon. (nb)">
 				>
 				["at0037"] = <
-					text = <"*Vurdering av bildekvalitet (nb)">
+					text = <"Assessment of image quality">
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"*God (nb)">
+					text = <"1 - Good">
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*Moderat (nb)">
+					text = <"2 - Moderate">
 					description = <"">
 				>
 				["at0040"] = <
-					text = <"*Ikke graderbar (nb)">
+					text = <"3 - Not gradable">
 					description = <"">
 				>
 				["at0029"] = <
