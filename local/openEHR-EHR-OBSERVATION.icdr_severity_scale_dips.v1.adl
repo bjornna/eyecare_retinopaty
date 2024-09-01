@@ -22,17 +22,19 @@ description
 		["email"] = <"bna@dips.no">
 	>
 	lifecycle_state = <"unmanaged">
+	other_contributors = <"Martine Louise Nalum <mana@dips.no>, Morten Hørthe <mho@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Benyttes for klassifisering av diabetes retinopati og makulaødem">
 			keywords = <"diabetes,retinopati,makulaødem", ...>
 			use = <"Klassifisering av diabetes retinopati og makulaødem">
-			misuse = <"Er ikke men for generell dokumentasjon av funn ved undersøkelse av øye. ">
+			misuse = <"Er ikke ment for generell dokumentasjon av funn ved undersøkelse av øye. ">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			copyright = <"© openEHR Foundation">
+			misuse = <"*Er ikke ment for generell dokumentasjon av funn ved undersøkelse av øye.  (nb)">
 		>
 	>
 	other_details = <
@@ -42,7 +44,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e5da1f93e3bfc6f62cb2ef742b6e53b3">
+		["MD5-CAM-1.0.1"] = <"163861208d202bdaa32d8e2d3429f8e1">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -215,7 +217,8 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Øye">
-					description = <"">
+					description = <"Angi hvilket øye (høyre/venstre) som er undersøkt. ">
+					comment = <"Se også terminologi binding til SNOMED-CT ">
 				>
 				["at0015"] = <
 					text = <"Høyre øye">
@@ -361,7 +364,8 @@ ontology
 				>
 				["at0014"] = <
 					text = <"*Øye (nb)">
-					description = <"">
+					description = <"*Angi hvilket øye (høyre/venstre) som er undersøkt.  (nb)">
+					comment = <"*Se også terminologi binding til SNOMED-CT  (nb)">
 				>
 				["at0015"] = <
 					text = <"*Høyre øye (nb)">
