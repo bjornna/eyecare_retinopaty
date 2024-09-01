@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,9 +23,13 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"F5EF0A6A58CF5A1E99FB7E427F9B2B92">
+		["MD5-CAM-1.0.1"] = <"eb858cea6dbd9c7f4b5763eb0031f800">
 		["build_uid"] = <"0dacfe9e-db63-3a9b-a230-ffe0718f2187">
 	>
 
@@ -54,6 +65,26 @@ ontology
 				["at0003"] = <
 					text = <"Time">
 					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"HbA1c reference archetype">
+					description = <"Reference archetype for use for recording HbA1c.">
+				>
+				["at0001"] = <
+					text = <"Analysis name">
+					description = <"The name of the analysis result.">
+				>
+				["at0002"] = <
+					text = <"Analysis result">
+					description = <"Analysis result">
+				>
+				["at0003"] = <
+					text = <"Time">
+					description = <"Time when the analysis was taken. ">
 				>
 			>
 		>
