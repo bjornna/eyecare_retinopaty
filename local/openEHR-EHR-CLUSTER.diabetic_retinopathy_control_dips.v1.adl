@@ -27,12 +27,16 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Utviklet for å angi tidsintervall til neste kontroll/screening. Det er utviklet et eget CLUSTER fordi flere av kundene har tenkt å benytte ulike roboter og kunstig intelligens i arbeidet med screening. Formålet med dette CLUSTERET er derfor å etablere en datastruktur (mottaksapparat) for ulike varianter av timing informasjonen. ">
+			copyright = <"© openEHR Foundation">
 			use = <"Benyttes for å angi intervall til neste kontroll/screening av diabetes retinopati. ">
 			misuse = <"Benyttes ikke utenfor konteksten av diabetes retinopati. ">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <" Developed to indicate the time interval until the next check/screening. A separate CLUSTER has been developed because several of the customers intend to use various robots and artificial intelligence in the screening work. The purpose of this CLUSTER is therefore to establish a data structure (receiving device) for different variants of the timing information.">
 			copyright = <"© openEHR Foundation">
+			use = <" Used to specify the interval until the next control/screening for diabetic retinopathy.">
+			misuse = <" Not used outside the context of diabetic retinopathy.">
 		>
 	>
 	other_details = <
@@ -41,7 +45,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cf1e5681b35e24d86655bd21c1f6063d">
+		["MD5-CAM-1.0.1"] = <"5974b7ba9822e7e567d9114fd4fbba56">
 		["build_uid"] = <"0f22db4c-098a-3719-bea1-571986d8762f">
 	>
 
@@ -84,15 +88,15 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Kontroll av diabetisk retinopati (nb)">
-					description = <"*Benyttes for å definere timing til neste kontroll/screening for utviklingen av diabetes retinopati.  (nb)">
+					text = <"Control of diabetic retinopathy">
+					description = <" Used to define timing for the next control/screening for the development of diabetic retinopathy.">
 				>
 				["at0001"] = <
-					text = <"*Antall måneder til neste kontroll (nb)">
+					text = <"Number of months until the next check-up">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"*Kommentar (nb)">
+					text = <"Comment">
 					description = <"">
 				>
 			>
