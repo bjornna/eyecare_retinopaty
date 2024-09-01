@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7de3b5c1fa75b234f8998fb3759d8129",
+      "MD5-CAM-1.0.1" : "7c8d06d89b739580a3e2a680b1ee2843",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -9607,7 +9607,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e5da1f93e3bfc6f62cb2ef742b6e53b3"
+        "PARENT:MD5-CAM-1.0.1" : "de82c68bae7a7a5b8d831d856eb0396f"
       },
       "details" : {
         "nb" : {
@@ -9662,7 +9662,8 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -9942,7 +9943,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e5da1f93e3bfc6f62cb2ef742b6e53b3"
+        "PARENT:MD5-CAM-1.0.1" : "de82c68bae7a7a5b8d831d856eb0396f"
       },
       "details" : {
         "nb" : {
@@ -9997,7 +9998,8 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -10928,6 +10930,12 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0009.1",
               "attributes" : [ ],
@@ -11057,7 +11065,22 @@
         "en" : { },
         "ar-sy" : { },
         "pt-br" : { },
-        "nb" : { },
+        "nb" : {
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Problem/diagnosenavn",
+            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+            "comment" : "Benytter kodesøk for ICD10 i applikasjonen for å definere diagnosene."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Problem/diagnosenavn",
+            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+            "comment" : "B"
+          }
+        },
         "sv" : { },
         "ko" : { },
         "fi" : { },
