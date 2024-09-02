@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "6803ebe036cc6d931b6356e6d9e3795b",
+      "MD5-CAM-1.0.1" : "b13ae3bd378bf31032e809bbb87c667b",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -1774,8 +1774,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0040.1",
             "text" : "Diagnosetidspunkt",
-            "description" : "Tidsangivelsen for bekymringen, plagen, problemet eller diagnosen.",
-            "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for bekymringen, plagen, problemet eller diagnosen i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Bekymringen, plagen, problemet eller diagnosen faktiske dato og/eller klokkeslett, start- og slutttid for bekymringen, plagen, problemet eller diagnosen, et tidsintervall for når bekymringen, plagen, problemet eller diagnosen oppstod, varigheten av bekymringen, plagen, problemet eller diagnosen, individets alder på tidspunktet for bekymringen, plagen, problemet eller diagnosen, eller hvor lenge det siden det oppstod. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
+            "description" : "Debut for angitt diabetestype.",
+            "comment" : "Bruker setter tidspunkt i skjema. "
           },
           "at0028.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4946,17 +4946,19 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "NLK"
                   },
                   "constraint" : [ ],
+                  "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
                     "code" : "NPU27300",
@@ -5240,7 +5242,17 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Analysenavn",
+            "description" : "HbA1C kodet med NLK ",
+            "comment" : "Angitt med NLK og skjult for bruker. ",
+            "hl7v2_mapping" : "OBX.3",
+            "fhir_mapping" : "Observation.code"
+          }
+        },
         "pt-br" : { },
         "de" : { },
         "nl" : { },
