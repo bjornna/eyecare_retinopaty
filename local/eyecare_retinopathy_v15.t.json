@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ecb836fecbd0248a478383aa5b231f19",
+      "MD5-CAM-1.0.1" : "1fa5427af848b8c91c88eb0e9abd6de5",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -4959,7 +4959,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "eb858cea6dbd9c7f4b5763eb0031f800"
+        "PARENT:MD5-CAM-1.0.1" : "5f732a30cd39af0888f5833dca1990eb"
       },
       "details" : {
         "nb" : {
