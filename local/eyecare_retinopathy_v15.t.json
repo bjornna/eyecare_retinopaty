@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b13ae3bd378bf31032e809bbb87c667b",
+      "MD5-CAM-1.0.1" : "061608141b7dc335da04d43e58892af2",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -982,17 +982,19 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "134395001",
@@ -7716,17 +7718,19 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
-                        "existence" : "0..1",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
                           "terminologyId" : {
                             "value" : "no.arena.eyecare.request"
                           },
                           "constraint" : [ ],
+                          "selectedTerminologies" : [ "no.arena.eyecare.request" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "no.arena.eyecare.request",
                             "code" : "EY01",
@@ -12624,17 +12628,19 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
-                        "existence" : "0..1",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
                           "terminologyId" : {
                             "value" : "SNOMED-CT"
                           },
                           "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED-CT" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "170945005",
