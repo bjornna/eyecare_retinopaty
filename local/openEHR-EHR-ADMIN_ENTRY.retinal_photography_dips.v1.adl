@@ -1,0 +1,70 @@
+archetype (adl_version=1.4; uid=314a6242-57ea-4449-ae58-47f24d512de1)
+	openEHR-EHR-ADMIN_ENTRY.retinal_photography_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-09-17">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"En administrativ arketype til bruk for lagring av relevante data for netthinnefotografering.">
+			keywords = <"Retinopatiscreening, oftalmologi, diabetisk retinopati, netthinnefotografering", ...>
+			use = <"En administrativ arketype til bruk for blant annet lagring av tidspunkt for netthinnefotografering. ">
+			misuse = <"Skal ikke brukes til å lagre annen type data. ">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"ead829137ee9b24d83c04afa31e047b8">
+		["build_uid"] = <"6d40ee81-7614-35c9-96b8-b886ecefdc23">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- Netthinnefotografering administrative data
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Dato/tid for foto
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Netthinnefotografering administrative data">
+					description = <"En administrativ arketype til bruk for lagring av relevante data for netthinnefotografering.">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Dato/tid for foto">
+					description = <"">
+				>
+			>
+		>
+	>
