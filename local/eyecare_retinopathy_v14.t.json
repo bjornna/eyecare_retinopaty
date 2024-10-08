@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "bac6d6675b250002a2c6de7363f4704c",
+      "MD5-CAM-1.0.1" : "d9b72c5a83402330b88b3e3815dfe290",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "original_language" : "ISO_639-1::nb"
     },
@@ -238,7 +238,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DA38D7FDB467BD8746408BF41D8C608D"
+        "PARENT:MD5-CAM-1.0.1" : "4530780ee85c5d2249d2e670a1a86b49"
       },
       "details" : {
         "nb" : {
@@ -4649,7 +4649,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "902f4288e1990b51099ae34e4e98108e"
+        "PARENT:MD5-CAM-1.0.1" : "28c6802d647e0bb5550189c82753093f"
       },
       "details" : {
         "nb" : {
@@ -4661,6 +4661,20 @@
             "codeString" : "nb"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "use" : "Use as a container for specific reference measurements. ",
+          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4715,7 +4729,8 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : { },
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4733,7 +4748,17 @@
       },
       "codeString" : "nb"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "en"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "7f5f63ab-a52d-323d-b676-4431b92456c4",
@@ -4745,7 +4770,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F9D744F8A2591A5F2F2DE8772489D2CF"
+        "PARENT:MD5-CAM-1.0.1" : "4a026b1c28cff4eae6b05635b1ba9ab8"
       },
       "details" : {
         "nb" : {
@@ -4757,6 +4782,19 @@
             "codeString" : "nb"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4779,7 +4817,8 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : { },
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4797,7 +4836,17 @@
       },
       "codeString" : "nb"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "en"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "5d026cc7-22dd-3f68-acab-23970786a069",
@@ -4809,7 +4858,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F5EF0A6A58CF5A1E99FB7E427F9B2B92"
+        "PARENT:MD5-CAM-1.0.1" : "5f732a30cd39af0888f5833dca1990eb"
       },
       "details" : {
         "nb" : {
@@ -4821,6 +4870,19 @@
             "codeString" : "nb"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4846,7 +4908,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
-            "existence" : "0..1",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
@@ -4879,7 +4940,6 @@
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
-            "existence" : "0..1",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
@@ -4918,7 +4978,8 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : { },
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4936,7 +4997,17 @@
       },
       "codeString" : "nb"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "en"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "a82233b9-7f2d-4dd5-8db4-37f6963cfd8c",
@@ -9578,7 +9649,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e5da1f93e3bfc6f62cb2ef742b6e53b3"
+        "PARENT:MD5-CAM-1.0.1" : "8a7362f0d7a02a51d5d624433aa45b60"
       },
       "details" : {
         "nb" : {
@@ -9913,7 +9984,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e5da1f93e3bfc6f62cb2ef742b6e53b3"
+        "PARENT:MD5-CAM-1.0.1" : "8a7362f0d7a02a51d5d624433aa45b60"
       },
       "details" : {
         "nb" : {
@@ -12505,7 +12576,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "bd2ade8e954c2dd4b8a6da84133adcf2"
+        "PARENT:MD5-CAM-1.0.1" : "5974b7ba9822e7e567d9114fd4fbba56"
       },
       "details" : {
         "nb" : {
@@ -12517,6 +12588,22 @@
             "codeString" : "nb"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : " Developed to indicate the time interval until the next check/screening. A separate CLUSTER has been developed because several of the customers intend to use various robots and artificial intelligence in the screening work. The purpose of this CLUSTER is therefore to establish a data structure (receiving device) for different variants of the timing information.",
+          "keywords" : [ ],
+          "use" : " Used to specify the interval until the next control/screening for diabetic retinopathy.",
+          "misuse" : " Not used outside the context of diabetic retinopathy.",
+          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12550,7 +12637,8 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : { },
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12568,7 +12656,17 @@
       },
       "codeString" : "nb"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "en"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "87e2704b-955b-43bc-b569-755e06dbd3f5",
