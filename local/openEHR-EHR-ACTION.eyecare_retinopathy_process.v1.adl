@@ -27,17 +27,17 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"b2e8f45e-ba48-386f-88fa-edc9b06a5d01">
-		["MD5-CAM-1.0.1"] = <"0fb7d4db0909d4dcd3dad2ee875d1fbf">
+		["MD5-CAM-1.0.1"] = <"1d95ea4a92b3115d460a63b08b0b2b5a">
 	>
 
 definition
-	ACTION[at0000] matches {    -- eyecare_retinopathy_process
+	ACTION[at0000] matches {    -- EyeCare administering av gradering
 		ism_transition matches {
 			ISM_TRANSITION[at0001] matches {    -- Bilde tatt
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[openehr::245]
+							[openehr::529]
 						}
 					}
 				}
@@ -117,6 +117,9 @@ definition
 		description matches {
 			ITEM_TREE[at0006] matches {*}    -- Item tree
 		}
+		protocol matches {
+			ITEM_TREE[at0007] matches {*}    -- Item tree
+		}
 	}
 
 ontology
@@ -124,7 +127,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"eyecare_retinopathy_process">
+					text = <"EyeCare administering av gradering">
 					description = <"eyecare_retinopathy_process">
 				>
 				["at0001"] = <
@@ -148,6 +151,10 @@ ontology
 					description = <"">
 				>
 				["at0006"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0007"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
