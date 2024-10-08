@@ -1,0 +1,156 @@
+archetype (adl_version=1.4; uid=733baabc-7fdd-4a76-9a44-74d0bb7088f4)
+	openEHR-EHR-ACTION.eyecare_retinopathy_process.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-10-09">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"b2e8f45e-ba48-386f-88fa-edc9b06a5d01">
+		["MD5-CAM-1.0.1"] = <"0fb7d4db0909d4dcd3dad2ee875d1fbf">
+	>
+
+definition
+	ACTION[at0000] matches {    -- eyecare_retinopathy_process
+		ism_transition matches {
+			ISM_TRANSITION[at0001] matches {    -- Bilde tatt
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0001]    -- Bilde tatt
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0002] matches {    -- Primærgradering utført
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0002]    -- Primærgradering utført
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0003] matches {    -- Sekundærgradering utført
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0003]    -- Sekundærgradering utført
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0004] matches {    -- Neste undersøkelse besluttet
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0004]    -- Neste undersøkelse besluttet
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0005] matches {    -- Neste kontakt planlagt
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0005]    -- Neste kontakt planlagt
+						}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0006] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"eyecare_retinopathy_process">
+					description = <"eyecare_retinopathy_process">
+				>
+				["at0001"] = <
+					text = <"Bilde tatt">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Primærgradering utført">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Sekundærgradering utført">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Neste undersøkelse besluttet">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Neste kontakt planlagt">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
